@@ -9,7 +9,6 @@ RUN mv composer.phar /usr/local/bin/composer
 RUN docker-php-ext-install mbstring pdo pdo_mysql mysqli
 
 WORKDIR /var/www/html/htdocs
-USER www-data
 
 ENV PORT 80
 EXPOSE 80
